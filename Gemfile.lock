@@ -23,6 +23,9 @@ GEM
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
     rake (12.3.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
@@ -37,8 +40,16 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
+    sinatra (1.4.7)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-activerecord (2.0.10)
+      activerecord (>= 3.2)
+      sinatra (~> 1.0)
     sqlite3 (1.3.13)
     thread_safe (0.3.6)
+    tilt (2.0.5)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
 
@@ -50,7 +61,8 @@ DEPENDENCIES
   pry
   rake
   rspec
+  sinatra-activerecord
   sqlite3
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
